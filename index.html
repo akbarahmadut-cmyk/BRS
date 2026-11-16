@@ -6,120 +6,38 @@
 <title>PT Bumi Rempah Sulawesi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#F6EFE4;--bg2:#EADBC4;--card:#FFFBF4;--ink:#2B1810;--mute:#5C4638;--dark:#2B1810;--dark2:#1C0F0A;--acc:#8F3E1B;--acc2:#E8A27C;--on-dark:#F6EFE4;--on-dark2:#E9D9C3;--line:rgba(43,24,16,.18);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A0F0A;--bg2:#241610;--card:#2D1B13;--ink:#F3E8D8;--mute:#C9B79F;--acc:#E8A27C;--line:rgba(243,232,216,.2);--dark:#120A06;--dark2:#0C0604;color-scheme:dark}}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 'Inter',system-ui,sans-serif}
-img{display:block;max-width:100%}
-a{color:var(--acc)}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;margin:0}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-section{padding:96px 0}
-.alt{background:var(--bg2)}
-.eyebrow{margin:0 0 12px;font-weight:600;color:var(--acc);font-size:15px}
-h2{font-size:clamp(30px,5vw,44px)}
-p{margin:0 0 16px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.split.rev>:first-child{order:2}
-.ph{border-radius:16px;overflow:hidden;box-shadow:0 18px 40px -18px rgba(43,24,16,.55)}
-.ph img{width:100%;height:100%;object-fit:cover}
-.tall{aspect-ratio:4/5}.wide{aspect-ratio:4/3}
-header{position:sticky;top:0;z-index:40;background:var(--dark);padding-top:env(safe-area-inset-top,0px)}
-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-top:14px;padding-bottom:14px}
-.brand{display:inline-flex;align-items:center;gap:12px;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:20px;color:var(--on-dark);text-decoration:none}
-nav{display:flex;flex-wrap:wrap;gap:4px 24px;font-size:15px}
-nav a{color:var(--on-dark2);text-decoration:none;padding:8px 0;border-bottom:2px solid transparent}
-nav a:hover,nav a:focus-visible{color:#fff;border-bottom-color:var(--acc2)}
-:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
-.hero{background:var(--dark);color:var(--on-dark);padding:72px 0 96px;overflow:hidden}
-.hero .split{gap:48px}
-.hero h1{font-size:clamp(38px,6vw,66px);margin-bottom:22px}
-.hero p.lead{font-size:20px;color:var(--on-dark2);max-width:560px}
-.kicker{color:var(--acc2);font-weight:600;font-size:15px;margin-bottom:16px}
-.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-.btn{display:inline-block;padding:14px 28px;border-radius:8px;font-weight:600;text-decoration:none;transition:transform .15s,background .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn.p{background:var(--acc2);color:#2B1810}
-.btn.o{border:1.5px solid var(--acc2);color:var(--on-dark)}
-.hero-ph{position:relative}
-.hero-ph .main{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;overflow:hidden;border:6px solid var(--acc2)}
-.hero-ph .main img{width:100%;height:100%;object-fit:cover}
-.hero-ph .chip{position:absolute;left:-18px;bottom:28px;width:44%;aspect-ratio:1;border-radius:14px;overflow:hidden;border:5px solid var(--dark);box-shadow:0 10px 30px rgba(0,0,0,.5)}
-.hero-ph .chip img{width:100%;height:100%;object-fit:cover}
-.mis{display:flex;flex-direction:column;gap:18px;margin-top:8px}
-.mis div{display:flex;gap:16px;align-items:flex-start;border-top:1px solid var(--line);padding-top:16px}
-.mis b{font-family:'Fraunces',Georgia,serif;font-size:28px;color:var(--acc);min-width:30px;line-height:1.1}
-.mis p{margin:0}
-.vis{background:var(--dark);color:var(--on-dark);padding:40px;border-radius:16px}
-.vis h3{font-size:30px;color:var(--acc2);margin-bottom:14px}
-.vis p{font-size:21px;margin:0}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px}
-.card h3{font-size:24px;margin-bottom:10px}
-.card p{margin:0;color:var(--mute)}
-.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:32px;margin-top:40px}
-.prod{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.prod .pic{aspect-ratio:16/10;overflow:hidden}
-.prod .pic img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.prod:hover .pic img{transform:scale(1.04)}
-.prod .txt{padding:30px 32px 34px}
-.prod h3{font-size:30px;margin-bottom:14px}
-.prod p{margin:0 0 10px}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.tags span{background:var(--bg2);border-radius:999px;padding:4px 14px;font-size:14px}
-.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px;margin-top:40px}
-.gal button{padding:0;border:0;border-radius:12px;overflow:hidden;cursor:zoom-in;position:relative;background:var(--bg2)}
-.gal button:nth-child(1),.gal button:nth-child(6){grid-column:span 2;grid-row:span 2}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.gal button:hover img{transform:scale(1.06)}
-.gal span{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;text-align:left;color:#fff;font-size:14px;background:linear-gradient(transparent,rgba(0,0,0,.7))}
-dialog{border:0;padding:0;background:transparent;max-width:min(94vw,900px);max-height:92vh;color:#fff}
-dialog::backdrop{background:rgba(10,5,3,.85)}
-dialog img{max-height:84vh;margin:0 auto;border-radius:10px}
-dialog p{text-align:center;margin:10px 0 0}
-dialog button{position:absolute;top:8px;right:8px;background:#fff;color:#000;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
-.contact{background:var(--dark);color:var(--on-dark)}
-.contact .eyebrow{color:var(--acc2)}
-.contact p.s{color:var(--on-dark2)}
-.contact a{color:var(--on-dark)}
-.ci{display:flex;flex-direction:column;gap:18px}
-.ci p{margin:0}.ci b{color:var(--acc2);display:block}
-.contact .ph{margin-bottom:28px;aspect-ratio:16/9}
-footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;padding:26px 24px}
-.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;background:#1B7F4B;color:#fff;text-decoration:none;font-weight:600;padding:14px 22px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
-@media (max-width:860px){section{padding:64px 0}.split,.split.rev{grid-template-columns:1fr;gap:36px}.split.rev>:first-child{order:0}.hero-ph{max-width:420px}.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}.gal button:nth-child(1),.gal button:nth-child(6){grid-column:span 2;grid-row:span 1}.prods{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
-.brand img{width:48px;height:48px;border-radius:50%;box-shadow:0 0 0 2px var(--acc2)}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<meta name="description" content="PT Bumi Rempah Sulawesi — pengolahan dan perdagangan cengkeh pilihan dari Sulawesi. Kenali produk, proses, dan kemitraan kami.">
+<meta name="theme-color" content="#0f4e57">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Lewati ke konten</a>
 
 <header><div class="wrap">
-<a class="brand" href="#beranda"><img src="images/logo-bulat.png" alt="" width="48" height="48">Bumi Rempah Sulawesi</a>
-<nav aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#sejarah">Sejarah</a><a href="#visi">Visi &amp; Misi</a><a href="#keunggulan">Keunggulan</a><a href="#produk">Produk</a><a href="#galeri">Galeri</a><a href="#kontak">Kontak</a></nav>
+<a class="brand" href="#beranda"><img src="images/logo-bulat.png" alt="" width="48" height="48"><span>Bumi Rempah<small>SULAWESI</small></span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button><nav id="main-nav" aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#keunggulan">Keunggulan</a><a href="#produk">Produk</a><a href="#galeri">Galeri</a><a class="nav-contact" href="#kontak">Mari bekerja sama <span aria-hidden="true">↗</span></a></nav>
 </div></header>
 
-<main>
+<main id="main">
 <section id="beranda" class="hero"><div class="wrap split">
 <div>
-<p class="kicker">Pengolahan &amp; perdagangan rempah di Maros, Sulawesi Selatan</p>
-<h1>Cengkeh pilihan dari jantung rempah Sulawesi.</h1>
+<p class="kicker">DARI SULAWESI, UNTUK DUNIA</p>
+<h1>Kekayaan bumi.<br>Kualitas terpilih.<br><em>Rempah Sulawesi.</em></h1>
 <p class="lead">Segar, aromatik, dan berkualitas ekspor. Kami menghadirkan cengkeh dari petani binaan Sulawesi untuk pasar lokal dan dunia.</p>
-<div class="btns"><a class="btn p" href="#produk">Lihat produk</a><a class="btn o" href="#kontak">Hubungi kami</a></div>
-</div>
+<div class="btns"><a class="btn p" href="#produk">Jelajahi produk <span aria-hidden="true">↗</span></a><a class="btn o" href="#tentang">Kenali kami <span aria-hidden="true">↓</span></a></div>
+<div class="hero-origin"><span class="origin-mark" aria-hidden="true">✳</span><span>Berakar pada alam.<br><strong>Tumbuh bersama petani lokal.</strong></span></div></div>
 <div class="hero-ph">
 <div class="main"><img src="images/cengkeh-kering.jpg" alt="Segenggam cengkeh kering pilihan" width="720" height="900"></div>
-<div class="chip"><img src="images/seleksi-mutu.jpg" alt="Sortir cengkeh di nampan" width="300" height="300"></div>
+<div class="photo-note">01 / KEKAYAAN ALAM SULAWESI</div><div class="chip"><img src="images/seleksi-mutu.jpg" alt="Sortir cengkeh di nampan" width="300" height="300"></div>
 </div>
-</div></section>
+</div><a class="hero-scroll" href="#tentang">KENALI BUMI REMPAH <span aria-hidden="true">↓</span></a></section>
+<div class="values-strip"><span>Asal Sulawesi</span><i aria-hidden="true">✳</i><span>Seleksi kualitas</span><i aria-hidden="true">✳</i><span>Kemitraan petani</span><i aria-hidden="true">✳</i><span>Pasar lokal &amp; global</span></div>
 
 <section id="tentang"><div class="wrap split">
 <div>
-<p class="eyebrow">Tentang perusahaan</p>
-<h2 style="margin-bottom:24px">Dari alam Sulawesi, untuk dunia.</h2>
+<p class="eyebrow">01 — TENTANG KAMI</p>
+<h2 style="margin-bottom:24px">Mengakar di Sulawesi.<br><em>Menjangkau dunia.</em></h2>
 <p>PT Bumi Rempah Sulawesi bergerak di bidang pengolahan dan perdagangan rempah-rempah, khususnya cengkeh berkualitas tinggi dari Sulawesi. Berlokasi di jantung daerah penghasil rempah terbaik di Indonesia, kami memenuhi kebutuhan pasar lokal maupun internasional akan cengkeh yang segar, aromatik, dan berkualitas ekspor.</p>
 <p>Dengan jaringan petani binaan yang luas, proses pengolahan modern, serta standar kualitas yang ketat, kami berkomitmen memberikan produk terbaik yang dihasilkan langsung dari alam Sulawesi.</p>
 </div>
@@ -128,7 +46,7 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 
 <section id="sejarah" class="alt"><div class="wrap split rev">
 <div>
-<p class="eyebrow">Sejarah singkat</p>
+<p class="eyebrow">02 — SEJARAH KAMI</p>
 <h2 style="margin-bottom:24px">Lahir dari semangat melestarikan kejayaan rempah.</h2>
 <p>Didirikan pada tahun 2025, PT Bumi Rempah Sulawesi lahir dari semangat melestarikan kejayaan rempah-rempah Indonesia yang pernah menjadi primadona dunia.</p>
 <p>Berawal dari usaha keluarga dalam perdagangan hasil bumi, kini kami berkembang menjadi perusahaan profesional dengan orientasi ekspor, menjangkau pasar Asia, Timur Tengah, dan Eropa.</p>
@@ -138,7 +56,7 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 </div></section>
 
 <section id="visi"><div class="wrap">
-<p class="eyebrow">Visi &amp; misi</p>
+<p class="eyebrow">03 — VISI &amp; MISI</p>
 <div class="split" style="align-items:start;margin-top:8px">
 <div class="vis"><h3>Visi</h3><p>Menjadi perusahaan penghasil dan pengekspor cengkeh terbaik dari Sulawesi yang dikenal di pasar global.</p></div>
 <div>
@@ -154,7 +72,7 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 <section id="keunggulan" class="alt"><div class="wrap split">
 <div class="ph tall"><img src="images/seleksi-mutu.jpg" alt="Seleksi mutu cengkeh berdasarkan asal kebun" loading="lazy"></div>
 <div>
-<p class="eyebrow">Keunggulan perusahaan</p>
+<p class="eyebrow">04 — KEUNGGULAN KAMI</p>
 <h2>Mengapa memilih kami</h2>
 <div class="cards" style="grid-template-columns:1fr;margin-top:28px;gap:16px">
 <div class="card"><h3>Kualitas premium</h3><p>Hanya cengkeh pilihan yang lolos standar QC. Setiap partai diseleksi agar aroma dan mutunya konsisten.</p></div>
@@ -164,8 +82,8 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 </div></section>
 
 <section id="produk"><div class="wrap">
-<p class="eyebrow">Produk utama</p>
-<h2>Cengkeh dan turunannya</h2>
+<p class="eyebrow">05 — PRODUK PILIHAN</p>
+<h2>Aroma khas.<br><em>Manfaat tanpa batas.</em></h2><p class="section-intro">Dari bunga hingga tangkainya, setiap bagian menyimpan nilai. Temukan rempah yang tepat untuk kebutuhan usaha Anda.</p>
 <div class="prods">
 <article class="prod"><div class="pic"><img src="images/cengkeh-tangan.jpg" alt="Cengkeh kering di telapak tangan" loading="lazy"></div><div class="txt">
 <h3>Cengkeh</h3>
@@ -173,7 +91,7 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 <p><strong>Spesifikasi:</strong> kadar air maksimal 3,5%, kadar minyak atsiri tinggi, aroma kuat.</p>
 <p><strong>Kemasan:</strong> karung 25 kg / 50 kg atau sesuai permintaan.</p>
 <p><strong>Penggunaan:</strong> industri rokok kretek, bumbu masakan, obat-obatan, aromaterapi, dan kosmetik.</p>
-<div class="tags"><span>Kretek</span><span>Bumbu</span><span>Aromaterapi</span><span>Kosmetik</span></div>
+<a class="product-link" href="https://wa.me/6285240013631?text=Saya%20tertarik%20dengan%20produk%20cengkeh">Tanyakan produk <span aria-hidden="true">↗</span></a><div class="tags"><span>Kretek</span><span>Bumbu</span><span>Aromaterapi</span><span>Kosmetik</span></div>
 </div></article>
 <article class="prod"><div class="pic"><img src="images/gagang-cengkeh.jpg" alt="Gagang cengkeh kering di telapak tangan" loading="lazy"></div><div class="txt">
 <h3>Gagang cengkeh</h3>
@@ -181,12 +99,12 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 <p><strong>Spesifikasi:</strong> kadar air maksimal 3,5%, warna cokelat tua.</p>
 <p><strong>Kemasan:</strong> karung 25 kg / 50 kg.</p>
 <p><strong>Penggunaan:</strong> bahan baku minyak atsiri, obat-obatan tradisional, dan campuran bumbu industri.</p>
-<div class="tags"><span>Minyak atsiri</span><span>Jamu &amp; obat</span><span>Bumbu industri</span></div>
+<a class="product-link" href="https://wa.me/6285240013631?text=Saya%20tertarik%20dengan%20gagang%20cengkeh">Tanyakan produk <span aria-hidden="true">↗</span></a><div class="tags"><span>Minyak atsiri</span><span>Jamu &amp; obat</span><span>Bumbu industri</span></div>
 </div></article>
 </div></div></section>
 
 <section id="galeri" class="alt"><div class="wrap">
-<p class="eyebrow">Galeri</p>
+<p class="eyebrow">06 — CERITA DALAM GAMBAR</p>
 <h2>Dari kebun hingga karung</h2>
 <div class="gal">
 <button data-c="Tim kami memeriksa mutu langsung di gudang Maros"><img src="images/tim-gudang.jpg" alt="Tim memeriksa mutu di gudang" loading="lazy"><span>Pemeriksaan di gudang</span></button>
@@ -199,12 +117,12 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 
 <section id="kontak" class="contact"><div class="wrap split" style="align-items:start">
 <div>
-<p class="eyebrow">Kontak</p>
-<h2 style="margin-bottom:16px">Mari bekerja sama.</h2>
+<p class="eyebrow">07 — MARI TERHUBUNG</p>
+<h2 style="margin-bottom:16px">Dari percakapan,<br><em>menjadi kemitraan.</em></h2>
 <p class="s">Hubungi kami untuk permintaan penawaran, spesifikasi, atau pengiriman sesuai kebutuhan Anda.</p>
 <div class="ph"><img src="images/kerja-sama.jpg" alt="Jabat tangan kerja sama" loading="lazy"></div>
 </div>
-<div class="ci">
+<div class="ci"><a class="btn p" href="https://wa.me/6285240013631">Mulai percakapan di WhatsApp ↗</a>
 <p><b>Telepon / WhatsApp</b><a href="https://wa.me/6285240013631">+62 852-4001-3631</a></p>
 <p><b>Email</b><a href="mailto:Cv.Bumirempahsulawesi@gmail.com" style="overflow-wrap:anywhere">Cv.Bumirempahsulawesi@gmail.com</a></p>
 <p><b>Media sosial</b>Facebook: Bumi Rempah Sulawesi<br>TikTok: PT Bumi Rempah Sulawesi</p>
@@ -217,6 +135,7 @@ footer{background:var(--dark2);color:#C9B79F;text-align:center;font-size:14px;pa
 <a class="wa" href="https://wa.me/6285240013631" aria-label="Chat WhatsApp Bumi Rempah Sulawesi">Chat WhatsApp</a>
 
 <dialog id="lb"><button type="button" aria-label="Tutup">×</button><img alt=""><p></p></dialog>
+<script src="script.js" defer></script>
 <script>
 (function(){var d=document.getElementById('lb'),i=d.querySelector('img'),p=d.querySelector('p');
 document.querySelectorAll('.gal button').forEach(function(b){b.addEventListener('click',function(){var s=b.querySelector('img');i.src=s.src;i.alt=s.alt;p.textContent=b.dataset.c;d.showModal()})});
