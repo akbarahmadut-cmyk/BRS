@@ -1,17 +1,9 @@
+
 {
-  // ...
-  "observability": {
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1,
-      "invocation_logs": true,
-      "persist": true
-    },
-    "traces": {
-      "enabled": false,
-      "head_sampling_rate": 1,
-      "persist": true
-    }
-  },
-  // ...
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bumirempahsulawesi",
+  "compatibility_date": "2026-11-17",
+  "assets": {
+    "directory": "./"
+  }
 }
